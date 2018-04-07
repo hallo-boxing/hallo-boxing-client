@@ -98,4 +98,8 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    // 1.接口封装，okhttp，二维码扫描，gps定位，高德地图sdk
+    // 2.画UI
+    // 3.接口测试
 }

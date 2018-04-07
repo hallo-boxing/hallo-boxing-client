@@ -27,4 +27,19 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    /* lombok */
+    provided group: 'org.projectlombok', name: 'lombok', version: '1.16.20'
+
+    /* http client */
+    compile group: 'com.squareup.retrofit2', name: 'retrofit', version: '2.4.0'
+    compile group: 'com.squareup.retrofit2', name: 'converter-gson', version: '2.4.0'
+
+
+    /* 依赖注入框架 */
+    compile group: 'com.google.dagger', name: 'dagger', version: '2.15'
+    annotationProcessor group: 'com.google.dagger', name: 'dagger-compiler', version: '2.15'
+
+
+
 }
