@@ -23,6 +23,8 @@ public class OrderDO {
     private String receiveTime;
     private String remarks;
     private int status;
-    private int userId;
+    private int fromUserId;
+    private int toUserId;
+
 
 }

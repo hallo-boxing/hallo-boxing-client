@@ -1,9 +1,11 @@
 package org.xiaoheshan.hallo.boxing.client.dal;
 
-import org.xiaoheshan.hallo.boxing.client.bean.GoodDO;
 import org.xiaoheshan.hallo.boxing.client.bean.OrderDO;
+import org.xiaoheshan.hallo.boxing.client.bean.OrderVO;
 import org.xiaoheshan.hallo.boxing.client.common.rest.RestPageResult;
 import org.xiaoheshan.hallo.boxing.client.common.rest.RestResult;
+
+import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -29,11 +31,15 @@ public interface OrderDAO {
     @POST( URL_PREFIX + "/{order_id}/pay")
     Call<RestResult<Void>> pay(@Path("order_id") Integer orderId);
 
-    @POST( URL_PREFIX + "/list/{user_id}")
-    Call<RestPageResult<OrderDO>> list(@Path("user_id") Integer userId);
+    @POST( URL_PREFIX + "/list-from/{user_id}")
+    Call<RestResult<List<OrderVO>>> listByFromUserId(@Path("user_id") Integer userId);
 
-    @POST( URL_PREFIX + "/return/{user_id}/{good_id}")
+    @POST( URL_PREFIX + "/list-to/{user_id}")
+    Call<RestResult<List<OrderVO>>> listByToUserId(@Path("user_id") Integer userId);
+
+    @POST( URL_PREFIX + "/return/{user_id}/{order_id}/{cabinet_id}")
     Call<RestPageResult<OrderDO>> retur(@Path("user_id") Integer userId,
-                                        @Path("good_id") Integer goodId);
+                                        @Path("order_id") Integer orderId,
+                                        @Path("cabinet_id") Integer cabinetId);
 
 }

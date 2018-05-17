@@ -6,4 +6,76 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="nav_my">我的</string>
+    <string name="nva_order">订单</string>
+    <string name="nav_explore">发现</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="display_my_location">我的位置</string>
+    <string name="display_good_name">商品名称</string>
+    <string name="display_good_price">商品价格</string>
+    <string name="display_rent_info">商品租借信息</string>
+    <string name="display_good_desc">商品描述</string>
+    <string name="display_good_img">商品图片</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+
+    <string name="display_order_status">订单状态</string>
+    <string name="display_rent_time">租借时长</string>
+    <string name="display_order_price">订单总价格</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="login">您还未登录，点击登录</string>
+    <string name="rent">我要出租</string>
+    <string name="rent_record">出借记录</string>
+    <string name="my_collection">我的收藏</string>
+    <string name="my_custom_service">我的客服</string>
+    <string name="no_more">没有更多的了</string>
+    <string name="good_description">商品描述</string>
+    <string name="my_good">我的宝贝</string>
+    <string name="search_good">搜索宝贝</string>
+    <string name="wallet">钱包</string>
+    <string name="display_money">0.00</string>
+    <string name="offer">优惠</string>
+    <string name="number">0</string>
+    <string name="display_mobile">138****8000</string>
+    <string name="display_user_name">用户名称</string>
+    <string name="my">我的</string>
+    <string name="display_pay">付款</string>
+    <string name="my_order">我的订单</string>
+    <string name="login_string">登录</string>
+    <string name="input_mobile">请输入手机号码</string>
+    <string name="input_password">请输入密码</string>
+    <string name="input_good_name">商品名称：</string>
+    <string name="input_rent_price">请输入租用单价(元/小时)</string>
+    <string name="input_market_price">请输入市场单价(元)</string>
+    <string name="logout">退出登录</string>
+    <string name="rented">我要租借</string>
+    <string name="entry_good">录入商品</string>
+    <string name="entry">录入</string>
+    <string name="cat1">一级分类：</string>
+    <string name="cat2">二级分类：</string>
+    <string name="cat3">三级分类：</string>
+    <string name="rent_label">租用(元/小时)</string>
+    <string name="market_label">市场(元)</string>
+    <string name="good_gallery">商品相册</string>
+    <string name="good_detail">商品详情</string>
+    <string name="good_evaluation">商品评价</string>
+    <string name="none_evaluation">该商品暂无评价</string>
 </resources>

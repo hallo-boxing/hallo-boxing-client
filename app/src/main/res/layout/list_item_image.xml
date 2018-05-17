@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/good_image_view"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_add_a_photo_grey_400_36dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:layout_width="98dp"
+        android:layout_height="98dp">
+    </ImageView>
+</LinearLayout>

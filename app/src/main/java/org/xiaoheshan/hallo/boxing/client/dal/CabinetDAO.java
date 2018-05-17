@@ -5,6 +5,7 @@ import org.xiaoheshan.hallo.boxing.client.bean.GoodDO;
 import org.xiaoheshan.hallo.boxing.client.common.rest.RestResult;
 
 import retrofit2.Call;
+import retrofit2.http.Body;
 import retrofit2.http.POST;
 import retrofit2.http.Path;
 
@@ -28,13 +29,14 @@ public interface CabinetDAO {
     Call<RestResult<Void>> openDoor(@Path("cabinet_id") Integer cabinetId);
 
     @POST( URL_PREFIX + "/{cabinet_id}/entry/{nfc_code}")
-    Call<RestResult<GoodDO>> entryGood(@Path("cabinet_id") Integer cabinetId,
-                                       @Path("nfc_code") Integer nfcCode);
+    Call<RestResult<Void>> entryGood(@Path("cabinet_id") Integer cabinetId,
+                                       @Path("nfc_code") String nfcCode,
+                                       @Body GoodDO good);
 
     @POST( URL_PREFIX + "/{cabinet_id}/get-nfc-code")
-    Call<RestResult<Integer>> getNfcCode(@Path("get-nfc-code") Integer cabinetId);
+    Call<RestResult<String>> getNfcCode(@Path("cabinet_id") Integer cabinetId);
 
     @POST( URL_PREFIX + "/{cabinet_id}/take-photo")
-    Call<RestResult<Void>> takePhoto(@Path("cabinet_id") Integer cabinetId);
+    Call<RestResult<Integer>> takePhoto(@Path("cabinet_id") Integer cabinetId, @Body int userId);
 
 }

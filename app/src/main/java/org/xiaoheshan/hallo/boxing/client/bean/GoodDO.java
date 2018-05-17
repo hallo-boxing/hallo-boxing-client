@@ -12,6 +12,7 @@ import lombok.NoArgsConstructor;
 @Data
 public class GoodDO {
 
+    private int userId;
     private int catId;
     private int catId1;
     private int catId2;

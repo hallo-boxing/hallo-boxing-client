@@ -50,4 +50,8 @@ public enum RestRetCodeEnum {
     public String getDesc() {
         return desc;
     }
+
+    public boolean is(String result) {
+        return this.code.equals(result);
+    }
 }
